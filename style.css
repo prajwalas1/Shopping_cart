@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .center-container {
+    text-align: center;
+  }
+  
+  .select {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    margin: 20px;
+  }
+  
+  .category-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .category-buttons button {
+    margin: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    flex: 0.5;
+    background-color: #c0c0c0;
+    font-size: 16px;
+    color: #000;
+    outline: none;
+  }
+  
+  .category-buttons button:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .category-buttons button:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  .category-buttons button.active {
+    background-color: grey;
+    color: black;
+  }
+  
+  .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    position: relative;
+    width: 200px;
+    margin: 10px;
+    max-height: 500px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 270px;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .card.wedding-special::before,
+  .card.on-offer::before,
+  .card.new-season::before {
+    content: "Wedding Special";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 3px;
+    z-index: 1;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  
+  .card.on-offer::before {
+    content: "On Offer";
+    background-color: white;
+  }
+  
+  .card.new-season::before {
+    content: "New Season";
+    background-color: white;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .vendor-info {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+  }
+  
+  .price-info {
+    margin-top: 5px;
+  }
+  
+  .price {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .compare-at-price {
+    text-decoration: line-through;
+    color: #555;
+    margin-right: 5px;
+  }
+  
+  .discount-percentage {
+    color: red;
+  }
+  
+  .add-to-cart-button {
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: black;
+  }
+  
